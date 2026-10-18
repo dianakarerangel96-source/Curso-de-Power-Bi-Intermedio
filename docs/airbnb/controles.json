@@ -1,0 +1,13 @@
+{
+  "alojamientos": 5000,
+  "anfitriones_catalogo": 1600,
+  "anfitriones_con_alojamiento": 1527,
+  "registros_mensuales": 60000,
+  "precio_promedio": 4964.584,
+  "ocupacion_catalogo_promedio": 0.5505479999999999,
+  "ingreso_estimado_anual": 5004204500.1,
+  "ingreso_mensual_suma_2025": 4933380952,
+  "ocupacion_mensual_promedio": 0.5502771166666667,
+  "reservas_catalogo": 443234,
+  "datos_recuperados": "Campos, nombres de medidas, visuales, posiciones y fondo. Expresiones DAX y relaciones internas no decodificadas desde DataModel binario."
+}

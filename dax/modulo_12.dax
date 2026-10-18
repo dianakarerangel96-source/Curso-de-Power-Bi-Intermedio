@@ -1,0 +1,3 @@
+// Rol de práctica en DimSucursal
+// Expresion de filtro del rol, no una medida
+DimSucursal[Sucursal] = "Norte"

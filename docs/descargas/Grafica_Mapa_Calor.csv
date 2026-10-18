@@ -1,0 +1,13 @@
+﻿Sucursal,Mes,OrdenMes,Cumplimiento
+Norte,Ene,1,1.1
+Norte,Feb,2,0.95
+Norte,Mar,3,1.03
+Sur,Ene,1,0.98
+Sur,Feb,2,0.72
+Sur,Mar,3,0.88
+Centro,Ene,1,1.02
+Centro,Feb,2,1.06
+Centro,Mar,3,0.94
+Occidente,Ene,1,0.87
+Occidente,Feb,2,0.91
+Occidente,Mar,3,1.04

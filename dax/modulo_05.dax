@@ -1,0 +1,22 @@
+// Color hexadecimal
+Color cumplimiento =
+VAR C = [Cumplimiento]
+RETURN SWITCH(TRUE(),
+    ISBLANK(C), "#667085",
+    C >= 1, "#18724A",
+    C >= 0.9, "#9A6700",
+    "#B42318"
+)
+
+// Etiqueta y título
+Etiqueta cumplimiento =
+VAR C = [Cumplimiento]
+RETURN SWITCH(TRUE(),
+    ISBLANK(C), "Sin meta compatible",
+    C >= 1, "Meta alcanzada",
+    C >= 0.9, "En tolerancia",
+    "Fuera de tolerancia"
+)
+
+Titulo ventas =
+"Ventas | " & SELECTEDVALUE(DimSucursal[Sucursal], "Varias sucursales")

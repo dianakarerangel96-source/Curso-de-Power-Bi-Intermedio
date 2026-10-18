@@ -1,0 +1,7 @@
+﻿LineaID,PedidoID,Fecha,SucursalID,Sucursal,Producto,Ingreso,Costo
+1,P01,2026-01-05,1,Norte,Equipo A,10000,7000
+2,P01,2026-01-05,1,Norte,Servicio B,5000,2000
+3,P02,2026-01-10,2,Sur,Equipo A,8000,6000
+4,P03,2026-02-03,1,Norte,Equipo A,12000,8400
+5,P04,2026-02-08,2,Sur,Servicio B,6000,2400
+6,P05,2026-02-15,2,Sur,Equipo A,4000,3000

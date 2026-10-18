@@ -1,0 +1,4 @@
+// Medidas para dispersión
+Numero operaciones = COUNTROWS(Ventas)
+
+Ingreso por operacion = DIVIDE([Ingresos], [Numero operaciones])

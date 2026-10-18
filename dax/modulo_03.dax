@@ -1,0 +1,18 @@
+// Ranking seleccionado
+Ranking ingresos =
+IF(
+    ISINSCOPE(DimSucursal[Sucursal]),
+    RANKX(ALLSELECTED(DimSucursal[Sucursal]), [Ingresos], , DESC, DENSE)
+)
+
+// Selector sin relación
+SelectorSucursal = SELECTCOLUMNS(
+    DimSucursal, "SucursalID", DimSucursal[SucursalID],
+    "Sucursal", DimSucursal[Sucursal]
+)
+
+Ingresos seleccion virtual =
+CALCULATE(
+    [Ingresos],
+    KEEPFILTERS(TREATAS(VALUES(SelectorSucursal[SucursalID]), DimSucursal[SucursalID]))
+)

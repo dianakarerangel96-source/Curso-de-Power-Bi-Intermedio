@@ -1,0 +1,262 @@
+{
+  "pages": [
+    {
+      "name": "2bc828054b1b156d0d04",
+      "displayName": "Página 1",
+      "width": 1920,
+      "height": 1080
+    }
+  ],
+  "visuals": [
+    {
+      "name": "3cfc65b90e5901c807ac",
+      "type": "shape",
+      "position": {
+        "x": 48.10020876826725,
+        "y": 306.6388308977039,
+        "z": 0,
+        "height": 117.24425887265136,
+        "width": 455.9498956158664,
+        "tabOrder": 0
+      },
+      "fields": {}
+    },
+    {
+      "name": "55d7273574b4a20d8114",
+      "type": "shape",
+      "position": {
+        "x": 31.411042944785276,
+        "y": 448.5889570552147,
+        "z": 1000,
+        "height": 265.03067484662574,
+        "width": 964.9079754601227,
+        "tabOrder": 1000
+      },
+      "fields": {}
+    },
+    {
+      "name": "e109f4c0abd030602337",
+      "type": "shape",
+      "position": {
+        "x": 1030.6748466257668,
+        "y": 448.5889570552147,
+        "z": 2000,
+        "height": 265.03067484662574,
+        "width": 861.840490797546,
+        "tabOrder": 2000
+      },
+      "fields": {}
+    },
+    {
+      "name": "917999d0b200199c61a2",
+      "type": "shape",
+      "position": {
+        "x": 31.411042944785276,
+        "y": 744.0490797546012,
+        "z": 3000,
+        "height": 265.03067484662574,
+        "width": 1861.1042944785274,
+        "tabOrder": 3000
+      },
+      "fields": {}
+    },
+    {
+      "name": "4004529c8784e6ca1e95",
+      "type": "cardVisual",
+      "position": {
+        "x": 84.17536534446761,
+        "y": 319.66597077244296,
+        "z": 4000,
+        "height": 91.18997912317327,
+        "width": 310.6471816283925,
+        "tabOrder": 4000
+      },
+      "fields": {
+        "Data": [
+          "Sum(Data.Monto pagado)"
+        ]
+      }
+    },
+    {
+      "name": "e30b4bfe0000a600da62",
+      "type": "textbox",
+      "position": {
+        "x": 342.7139874739038,
+        "y": 333.69519832985424,
+        "z": 6000,
+        "height": 63.13152400835073,
+        "width": 126.26304801670146,
+        "tabOrder": 6000
+      },
+      "fields": {}
+    },
+    {
+      "name": "f843f1e9088954bcb831",
+      "type": "donutChart",
+      "position": {
+        "x": 1190.4801670146137,
+        "y": 458.95615866388306,
+        "z": 7000,
+        "height": 242.50521920668058,
+        "width": 543.1315240083508,
+        "tabOrder": 7000
+      },
+      "fields": {
+        "Category": [
+          "Data.Esterilizado?"
+        ],
+        "Y": [
+          "Sum(Data.Monto pagado)"
+        ]
+      }
+    },
+    {
+      "name": "3c80d7680dc2ec9a5d71",
+      "type": "clusteredBarChart",
+      "position": {
+        "x": 61.127348643006265,
+        "y": 758.580375782881,
+        "z": 8000,
+        "height": 235.49060542797494,
+        "width": 582.2129436325679,
+        "tabOrder": 8000
+      },
+      "fields": {
+        "Category": [
+          "Data.Medico Veterinario que atendió"
+        ],
+        "Y": [
+          "Sum(Data.Monto pagado)"
+        ]
+      }
+    },
+    {
+      "name": "944c2cb8a9c38e29d378",
+      "type": "clusteredBarChart",
+      "position": {
+        "x": 778.6221294363256,
+        "y": 758.580375782881,
+        "z": 9000,
+        "height": 235.49060542797494,
+        "width": 464.96868475991647,
+        "tabOrder": 9000
+      },
+      "fields": {
+        "Category": [
+          "Data.Animal"
+        ],
+        "Y": [
+          "Sum(Data.Monto pagado)"
+        ]
+      }
+    },
+    {
+      "name": "a96fcb38d59c2c02bb21",
+      "type": "clusteredBarChart",
+      "position": {
+        "x": 1304.7181628392484,
+        "y": 758.580375782881,
+        "z": 10000,
+        "height": 235.49060542797494,
+        "width": 464.96868475991647,
+        "tabOrder": 10000
+      },
+      "fields": {
+        "Category": [
+          "Data.Servicio recibido"
+        ],
+        "Y": [
+          "Sum(Data.Monto pagado)"
+        ]
+      }
+    },
+    {
+      "name": "655ca0241438d9c70d34",
+      "type": "lineChart",
+      "position": {
+        "x": 148.3089770354906,
+        "y": 458.95615866388306,
+        "z": 11000,
+        "height": 242.50521920668058,
+        "width": 752.5678496868476,
+        "tabOrder": 11000
+      },
+      "fields": {
+        "Category": [
+          "TablaMeses.MesAbreviado"
+        ],
+        "Y": [
+          "Sum(Data.Monto pagado)"
+        ]
+      }
+    },
+    {
+      "name": "899397c82c88b5609dc6",
+      "type": "slicer",
+      "position": {
+        "x": 643.3402922755741,
+        "y": 111.23173277661796,
+        "z": 11001,
+        "height": 109.22755741127348,
+        "width": 464.96868475991647,
+        "tabOrder": 11001
+      },
+      "fields": {
+        "Values": [
+          "Data.Tratamiento"
+        ]
+      }
+    },
+    {
+      "name": "97bb456f7cb32d082b6e",
+      "type": "slicer",
+      "position": {
+        "x": 643.3402922755741,
+        "y": 265.55323590814197,
+        "z": 11002,
+        "height": 145.3027139874739,
+        "width": 241.50313152400835,
+        "tabOrder": 11002
+      },
+      "fields": {
+        "Values": [
+          "Data.Esterilizado?"
+        ]
+      }
+    },
+    {
+      "name": "1e48348f86de21bd4169",
+      "type": "slicer",
+      "position": {
+        "x": 1233.5699373695197,
+        "y": 111.23173277661796,
+        "z": 11003,
+        "height": 96.20041753653445,
+        "width": 456.9519832985386,
+        "tabOrder": 11003
+      },
+      "fields": {
+        "Values": [
+          "Data.Servicio recibido"
+        ]
+      }
+    },
+    {
+      "name": "6a0de03e37457c9069a8",
+      "type": "slicer",
+      "position": {
+        "x": 1011.1064718162839,
+        "y": 274.5720250521921,
+        "z": 11004,
+        "height": 117.24425887265136,
+        "width": 873.8204592901878,
+        "tabOrder": 11004
+      },
+      "fields": {
+        "Values": [
+          "TablaMeses.MesAbreviado"
+        ]
+      }
+    }
+  ]
+}

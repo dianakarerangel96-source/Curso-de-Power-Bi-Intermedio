@@ -1,0 +1,11 @@
+// Columna de control en CoordenadasPrueba
+CoordenadaValida =
+VAR Lat = CoordenadasPrueba[Latitud]
+VAR Lon = CoordenadasPrueba[Longitud]
+RETURN IF(
+    ISBLANK(Lat) || ISBLANK(Lon),
+    "Faltante",
+    IF(Lat < -90 || Lat > 90 || Lon < -180 || Lon > 180,
+        "Fuera de rango", "Revisar ubicacion"
+    )
+)

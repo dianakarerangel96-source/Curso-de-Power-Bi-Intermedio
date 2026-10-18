@@ -1,0 +1,18 @@
+// Base temporal y año anterior
+Ingresos tiempo = CALCULATE([Ingresos], REMOVEFILTERS(DimMes))
+
+Ingresos AA = CALCULATE(
+    [Ingresos tiempo], SAMEPERIODLASTYEAR(DimFecha[Date])
+)
+
+Variacion interanual =
+DIVIDE([Ingresos tiempo] - [Ingresos AA], [Ingresos AA])
+
+// Acumulado y ventana
+Ingresos YTD = TOTALYTD([Ingresos tiempo], DimFecha[Date])
+
+Ingresos 12M =
+CALCULATE(
+    [Ingresos tiempo],
+    DATESINPERIOD(DimFecha[Date], MAX(DimFecha[Date]), -12, MONTH)
+)

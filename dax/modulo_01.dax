@@ -1,0 +1,25 @@
+// Columna y calendario
+MesInicio = DATE(YEAR(Ventas[Fecha]), MONTH(Ventas[Fecha]), 1)
+
+DimFecha = CALENDAR(DATE(2026,1,1), DATE(2026,12,31))
+
+// Medidas base
+Ingresos = SUM(Ventas[Ingreso])
+
+Costos = SUM(Ventas[Costo])
+
+Utilidad = [Ingresos] - [Costos]
+
+Margen = DIVIDE([Utilidad], [Ingresos])
+
+Meta mensual = SUM(Metas[Meta])
+
+Pedidos = DISTINCTCOUNT(Ventas[PedidoID])
+
+// Cumplimiento compatible
+Cumplimiento =
+IF(
+    ISCROSSFILTERED(DimProducto) || ISCROSSFILTERED(DimFecha),
+    BLANK(),
+    DIVIDE([Ingresos], [Meta mensual])
+)

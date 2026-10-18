@@ -1,0 +1,312 @@
+{
+  "page": {
+    "name": "Resumen Airbnb",
+    "width": 1920,
+    "height": 1080
+  },
+  "visuals": [
+    {
+      "name": "cc73ee37e00e56d8842b",
+      "type": "slicer",
+      "position": {
+        "x": 660.6134969325153,
+        "y": 21.595092024539877,
+        "z": 8000,
+        "height": 63.803680981595086,
+        "width": 192.3926380368098,
+        "tabOrder": 1000
+      },
+      "fields": {
+        "Values": [
+          "Alojamientos.Ciudad"
+        ]
+      }
+    },
+    {
+      "name": "9d03fb0fc3ca898a314e",
+      "type": "slicer",
+      "position": {
+        "x": 883.4355828220858,
+        "y": 22.576687116564415,
+        "z": 9000,
+        "height": 62.82208588957055,
+        "width": 215.95092024539878,
+        "tabOrder": 2000
+      },
+      "fields": {
+        "Values": [
+          "Alojamientos.Tipo_Alojamiento"
+        ]
+      }
+    },
+    {
+      "name": "7c0d04c0ea142c085d43",
+      "type": "slicer",
+      "position": {
+        "x": 1560.7361963190183,
+        "y": 21.595092024539877,
+        "z": 10000,
+        "height": 65.76687116564418,
+        "width": 156.07361963190183,
+        "tabOrder": 3000
+      },
+      "fields": {
+        "Values": [
+          "Alojamientos.Categoria_Precio"
+        ]
+      }
+    },
+    {
+      "name": "d4b366f199c3483d1bad",
+      "type": "slicer",
+      "position": {
+        "x": 1120,
+        "y": 21.595092024539877,
+        "z": 11000,
+        "height": 66.74846625766871,
+        "width": 186.50306748466258,
+        "tabOrder": 4000
+      },
+      "fields": {
+        "Values": [
+          "Anfitriones.Superhost"
+        ]
+      }
+    },
+    {
+      "name": "dc393c9e70be0a65dd8a",
+      "type": "slicer",
+      "position": {
+        "x": 1340.8588957055215,
+        "y": 21.595092024539877,
+        "z": 12000,
+        "height": 66.74846625766871,
+        "width": 195.33742331288343,
+        "tabOrder": 5000
+      },
+      "fields": {
+        "Values": [
+          "Alojamientos.Cancelacion"
+        ]
+      }
+    },
+    {
+      "name": "839e414c0c8190eabe0b",
+      "type": "cardVisual",
+      "position": {
+        "x": 699.8773006134969,
+        "y": 120.7361963190184,
+        "z": 13000,
+        "height": 66.74846625766871,
+        "width": 250.30674846625766,
+        "tabOrder": 6000
+      },
+      "fields": {
+        "Data": [
+          "Alojamientos.Alojamientos Totales"
+        ]
+      }
+    },
+    {
+      "name": "bd6b9222063c84bde6a3",
+      "type": "cardVisual",
+      "position": {
+        "x": 1039.5092024539877,
+        "y": 125.6441717791411,
+        "z": 14000,
+        "height": 55.95092024539877,
+        "width": 212.0245398773006,
+        "tabOrder": 7000
+      },
+      "fields": {
+        "Data": [
+          "Alojamientos.Precio Promedio"
+        ]
+      }
+    },
+    {
+      "name": "90b763f5abc010836910",
+      "type": "cardVisual",
+      "position": {
+        "x": 1321.2269938650306,
+        "y": 115.8282208588957,
+        "z": 15000,
+        "height": 76.56441717791411,
+        "width": 262.0858895705521,
+        "tabOrder": 8000
+      },
+      "fields": {
+        "Data": [
+          "Alojamientos.Ocupación Promedio"
+        ]
+      }
+    },
+    {
+      "name": "e5dd587fe839b0db41b3",
+      "type": "cardVisual",
+      "position": {
+        "x": 1647.1165644171779,
+        "y": 114.84662576687116,
+        "z": 16000,
+        "height": 77.54601226993864,
+        "width": 230.67484662576686,
+        "tabOrder": 9000
+      },
+      "fields": {
+        "Data": [
+          "Alojamientos.Ingreso Estimado"
+        ]
+      }
+    },
+    {
+      "name": "51ecd837a0dc5b9094bb",
+      "type": "clusteredBarChart",
+      "position": {
+        "x": 123.68098159509202,
+        "y": 227.73006134969324,
+        "z": 17000,
+        "height": 247.36196319018404,
+        "width": 400.49079754601223,
+        "tabOrder": 10000
+      },
+      "fields": {
+        "Category": [
+          "Alojamientos.Ciudad"
+        ],
+        "Y": [
+          "Alojamientos.Alojamientos Totales"
+        ]
+      }
+    },
+    {
+      "name": "f5870f111d03e1197302",
+      "type": "clusteredBarChart",
+      "position": {
+        "x": 587.9754601226994,
+        "y": 227.73006134969324,
+        "z": 18000,
+        "height": 265.03067484662574,
+        "width": 394.601226993865,
+        "tabOrder": 11000
+      },
+      "fields": {
+        "Category": [
+          "Alojamientos.Tipo_Alojamiento"
+        ],
+        "Y": [
+          "Sum(Ocupacion_Mensual.Precio_Noche)"
+        ]
+      }
+    },
+    {
+      "name": "01f7c87914991aeb0d0b",
+      "type": "clusteredBarChart",
+      "position": {
+        "x": 1050.3067484662577,
+        "y": 227.73006134969324,
+        "z": 19000,
+        "height": 267.97546012269936,
+        "width": 402.4539877300613,
+        "tabOrder": 12000
+      },
+      "fields": {
+        "Category": [
+          "Alojamientos.Tipo_Alojamiento"
+        ],
+        "Y": [
+          "Alojamientos.Alojamientos Totales"
+        ]
+      }
+    },
+    {
+      "name": "ff86ac4612044ebcb931",
+      "type": "lineChart",
+      "position": {
+        "x": 130.5521472392638,
+        "y": 554.601226993865,
+        "z": 20000,
+        "height": 359.2638036809816,
+        "width": 626.2576687116564,
+        "tabOrder": 13000
+      },
+      "fields": {
+        "Category": [
+          "Ocupacion_Mensual.Fecha_Mes.Variación.Jerarquía de fechas.Año",
+          "Ocupacion_Mensual.Fecha_Mes.Variación.Jerarquía de fechas.Trimestre",
+          "Ocupacion_Mensual.Fecha_Mes.Variación.Jerarquía de fechas.Mes",
+          "Ocupacion_Mensual.Fecha_Mes.Variación.Jerarquía de fechas.Día"
+        ],
+        "Y": [
+          "Sum(Ocupacion_Mensual.Ocupacion_Pct)"
+        ]
+      }
+    },
+    {
+      "name": "59c74229a1edd004b078",
+      "type": "columnChart",
+      "position": {
+        "x": 1508.7116564417177,
+        "y": 227.73006134969324,
+        "z": 21000,
+        "height": 277.7914110429448,
+        "width": 381.840490797546,
+        "tabOrder": 14000
+      },
+      "fields": {
+        "Category": [
+          "Ocupacion_Mensual.Fecha_Mes.Variación.Jerarquía de fechas.Año",
+          "Ocupacion_Mensual.Fecha_Mes.Variación.Jerarquía de fechas.Mes"
+        ],
+        "Y": [
+          "Sum(Ocupacion_Mensual.Ingreso_Mensual)"
+        ]
+      }
+    },
+    {
+      "name": "379abb734c5b9315d2b7",
+      "type": "scatterChart",
+      "position": {
+        "x": 800.9815950920245,
+        "y": 554.601226993865,
+        "z": 22000,
+        "height": 400.49079754601223,
+        "width": 495.7055214723926,
+        "tabOrder": 15000
+      },
+      "fields": {
+        "Category": [
+          "Ocupacion_Mensual.Tipo_Alojamiento"
+        ],
+        "Size": [
+          "Alojamientos.Reservas Totales"
+        ],
+        "X": [
+          "Sum(Ocupacion_Mensual.Precio_Noche)"
+        ],
+        "Y": [
+          "Sum(Ocupacion_Mensual.Ocupacion_Pct)"
+        ]
+      }
+    },
+    {
+      "name": "e5607cc2597c10993a01",
+      "type": "clusteredBarChart",
+      "position": {
+        "x": 1396.8098159509202,
+        "y": 554.601226993865,
+        "z": 23000,
+        "height": 393.6196319018405,
+        "width": 493.74233128834356,
+        "tabOrder": 16000
+      },
+      "fields": {
+        "Category": [
+          "Ocupacion_Mensual.Listing_ID"
+        ],
+        "Y": [
+          "Sum(Ocupacion_Mensual.Ingreso_Mensual)"
+        ]
+      }
+    }
+  ]
+}

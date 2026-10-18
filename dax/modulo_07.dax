@@ -1,0 +1,18 @@
+// Bandera IQR por operación
+Atipico IQR =
+VAR S = SELECTEDVALUE(Ventas[SucursalID])
+VAR P = SELECTEDVALUE(Ventas[ProductoID])
+VAR X = SELECTEDVALUE(Ventas[Ingreso])
+VAR Ref = FILTER(
+    ALLSELECTED(Ventas),
+    Ventas[SucursalID] = S && Ventas[ProductoID] = P
+)
+VAR Q1 = PERCENTILEX.INC(Ref, Ventas[Ingreso], 0.25)
+VAR Q3 = PERCENTILEX.INC(Ref, Ventas[Ingreso], 0.75)
+VAR I = Q3 - Q1
+RETURN
+IF(
+    NOT HASONEVALUE(Ventas[LineaID]) || COUNTROWS(Ref) < 20 || I = 0,
+    BLANK(),
+    IF(X < Q1 - 1.5 * I || X > Q3 + 1.5 * I, 1, 0)
+)

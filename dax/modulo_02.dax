@@ -1,0 +1,15 @@
+// Iterador y denominador
+Utilidad iterada = SUMX(Ventas, Ventas[Ingreso] - Ventas[Costo])
+
+Participacion sucursal =
+DIVIDE(
+    [Ingresos],
+    CALCULATE([Ingresos], REMOVEFILTERS(DimSucursal))
+)
+
+// Intersección de filtros
+Ingresos Equipos =
+CALCULATE(
+    [Ingresos],
+    KEEPFILTERS(DimProducto[Categoria] = "Equipos")
+)

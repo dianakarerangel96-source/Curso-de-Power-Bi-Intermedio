@@ -1,0 +1,11 @@
+﻿CasoID,Latitud,Longitud,ReferenciaEsperada,ObservacionFuente
+1,21.8818,-102.2916,Aguascalientes,Control geográfico
+2,21.8818,102.2916,Aguascalientes,Revisar signo
+3,-102.2916,21.8818,Aguascalientes,Par invertido
+4,-89.5926,20.9674,Merida,Par invertido que pasa rangos
+5,95,-102,Mexico,Latitud fuera de rango
+6,21,-190,Mexico,Longitud fuera de rango
+7,,-102.2916,Aguascalientes,Faltante
+8,2420000,500000,Origen por confirmar,Fuente indica UTM sin zona documentada
+9,0,0,Sucursal mexicana,Ceros requieren verificar
+10,20.9674,-89.5926,Merida,Control geográfico

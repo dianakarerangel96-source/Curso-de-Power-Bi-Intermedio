@@ -1,0 +1,3 @@
+// Título para la página de detalle
+Titulo detalle =
+"Detalle | " & SELECTEDVALUE(DimSucursal[Sucursal], "Seleccione una sucursal")

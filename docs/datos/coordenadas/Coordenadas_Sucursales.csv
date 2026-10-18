@@ -1,0 +1,5 @@
+﻿SucursalID,Sucursal,Referencia,Latitud,Longitud,CRS
+1,Norte,Monterrey aproximado,25.6866,-100.3161,EPSG:4326
+2,Sur,Merida aproximado,20.9674,-89.5926,EPSG:4326
+3,Centro,Aguascalientes aproximado,21.8818,-102.2916,EPSG:4326
+4,Occidente,Guadalajara aproximado,20.6597,-103.3496,EPSG:4326
